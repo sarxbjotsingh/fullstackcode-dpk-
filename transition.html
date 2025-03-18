@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+             background-color: dodgerblue; 
+          /*  transition-property: all;   
+            transition-duration: 1s; */
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .box:hover .bottom{
+            /* width: 300px;
+            height: 300px;
+            background-color: tomato; */
+            bottom: 0px;
+        }
+
+        .bottom{
+            font-size: 30px;
+            background-color: brown;
+            position: absolute;
+            bottom: -40px;
+            width: 100%;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .box:hover img{
+            transform: scale(1.5);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="abc.png" alt="">
+        <div class="bottom">
+            social media
+        </div>
+    </div>
+</body>
+</html>
