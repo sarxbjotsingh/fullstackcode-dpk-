@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(){
+            console.log("hello"); //function body
+        }
+
+        fun(); //function call
+
+        
+        // function with retun
+
+        let a = function sub(a,b){
+            return a-b;
+        }
+
+        let num = a(5,2);
+        console.log(num);
+
+
+        //arrow function
+
+        let fun1 = () =>console.log("this is arrow function");
+        fun1();
+
+
+        //argument and parameter
+
+        let add = (a,b)=>a+b; //a and b is parameter inside (a,b) parentheses
+
+        let sum = add(2,4); // 2 and 4 is argument
+
+        console.log(sum);
+
+    </script>
+</body>
+</html>
