@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../css/ab.jpg" alt="" height="100" id="img">
+    <br>
+    <button onclick="fun(0)">img1</button>
+    <button onclick="fun(1)">img2</button>
+    <script>
+        let fun = (e)=>{
+            let ele = document.getElementById('img');
+            if(e==0){
+                ele.src="../css/abc.png";
+            }else{
+                
+                ele.src="../css/ab.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

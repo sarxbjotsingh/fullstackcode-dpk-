@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="a" id="yes" onclick="fun(0)">
+    <label for="yes">YES</label>
+    <input type="radio" name="a" id="no" onclick="fun(1)">
+    <label for="no">NO</label>
+    <br>
+    <input type="text" name="" id="input" disabled>
+    <input type="text" name="" id="input1" disabled>
+    <script>
+        let fun = (e)=>{
+            let ele = document.getElementById('input');
+            let ele1 = document.getElementById('input1');
+            if(e==0){
+                ele.disabled=false;
+                ele1.disabled=false;
+            }else{
+                ele.disabled=true;
+                ele1.disabled=true;
+                ele.value="";
+            }
+        }
+    </script>
+</body>
+</html>

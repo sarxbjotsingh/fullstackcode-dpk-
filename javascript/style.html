@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="box">hello PIET</h1>
+    <button onclick="fun()">click</button>
+    <script> 
+        let ele =document.getElementById('box');
+
+        let fun = ()=>{
+            ele.style="color:red;background-color:yellow";
+            ele.innerHTML="changed";
+        }
+
+        </script>
+</body>
+</html>
