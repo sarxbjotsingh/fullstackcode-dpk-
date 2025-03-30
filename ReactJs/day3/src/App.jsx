@@ -86,16 +86,7 @@ function App() {
 
   return (
     <>
-<div className="row">
 
-    {profile.map((value,index)=>{
-      return(
-        <ProfileCard name={value.name} des={value.des} src={value.src}/>
-      )
-      
-    })}
-
-    </div>
       {/* <h1>{num}</h1>
       <button onClick={fun}>click {num}</button> */}
       <ul>
