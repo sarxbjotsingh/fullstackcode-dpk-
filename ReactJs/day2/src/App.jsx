@@ -5,8 +5,10 @@ import Img1 from './images/pic.jpg'
 import Img2 from './images/pic2.jpg'
 function App() {
 
-  const fun =()=>{
-    alert("props function");
+  const fun =(e)=>{
+    // alert("props function");
+    // console.log(e.target.innerHTML);
+    console.log(e);
   }
   
    return (
@@ -16,7 +18,7 @@ function App() {
 
       <div className="row">
 
-     <Card name="Sunita" src="images/pic.jpg" fn={fun}/>
+     <Card name="Sunita" src="images/pic.jpg" fn={()=>fun(0)}/>
      <Card name="Aman" src="images/pic2.jpg" fn={fun}/>
      <Card name="Raman" src={Img1} fn={fun}/> 
      <Card name="Vanshika" src={Img2} fn={fun}/>
