@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: dodgerblue;
+    display: flex;
+}
+
+a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}

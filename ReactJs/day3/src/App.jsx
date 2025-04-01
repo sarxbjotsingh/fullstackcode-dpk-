@@ -57,7 +57,7 @@ function App() {
     },
     {
       name: 'Raman',
-      age: 26,
+      age: 17,
       des: "this is description 5",
       src: "images/pic5.jpg"
     },
@@ -111,14 +111,12 @@ function App() {
 
       {profile.map((value,index)=>{
         
-        return(
-          <>
-          <ProfileCard name={value.name} des={value.des} src={value.src}/>
-          </>
-        )
+        return <ProfileCard key={index} data={value} login={true}/>
+        
+        
  
       })}
-      </div> */}
+      </div>  */}
 
       {/* <input type="text" onChange={inputData} value={val} maxLength={5}  />
       <p>{val} </p>
@@ -126,7 +124,7 @@ function App() {
       <button onClick={txt}>click</button>
       <button onClick={txtt}>Lowercase</button> */}
 
-
+        
     </>
   )
 }
